@@ -1,0 +1,167 @@
+@charset "utf-8";
+@import "https://unpkg.com/ress/dist/ress.min.css";
+
+/*-------------------------
+  ページ全体
+-------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  min-width: 1000px;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  line-height: 1;
+}
+
+/* セクション共通 */
+section {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* パララックス */
+  background-attachment: fixed;
+
+  color: white;
+  text-shadow: 2px 2px 5px #333;
+}
+
+/* 中央コンテンツ */
+.inner {
+  width: 800px;
+  min-height: 300px;
+
+  padding: 60px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: center;
+
+  background-color: rgba(0, 0, 0, 0.45);
+
+  border-radius: 20px;
+
+  backdrop-filter: blur(4px);
+}
+
+/*-------------------------
+  テキスト
+-------------------------*/
+
+h1 {
+  color: white;
+  font-size: 80px;
+
+  text-align: center;
+
+  letter-spacing: 8px;
+
+  text-shadow:
+    3px 3px 5px #333;
+}
+
+h2 {
+  font-size: 42px;
+  margin-bottom: 35px;
+}
+
+section p {
+  font-size: 22px;
+  line-height: 2;
+}
+
+/*-------------------------
+  PAGE TOP
+-------------------------*/
+
+#page-top {
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.35)
+    ),
+    url("autumn.webp");
+
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.my-name {
+  width: 100%;
+
+  text-align: center;
+
+  margin-top: 40px;
+
+  font-size: 28px;
+
+  letter-spacing: 4px;
+}
+
+/*-------------------------
+  紅葉
+-------------------------*/
+
+#page-01 {
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.35)
+    ),
+    url("momiji.jpg");
+}
+
+/*-------------------------
+  秋の天気
+-------------------------*/
+
+#page-02 {
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.35)
+    ),
+    url("紅葉.webp");
+}
+
+/*-------------------------
+  秋の食べ物
+-------------------------*/
+
+#page-03 {
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.35)
+    ),
+    url("autumn-appetite-japanese-foods.jpg");
+}
+
+/*-------------------------
+  秋の夕方
+-------------------------*/
+
+#page-04 {
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("autum\ evening.jpg");
+}
